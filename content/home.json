@@ -3,6 +3,10 @@
   "meta_description": "",
   "sections": [
     {
+      "type": "custom-content",
+      "markdown": "![](/img/uploads/logo-ashee-calcados-site.png)"
+    },
+    {
       "type": "banner-slider",
       "autoplay": 9000,
       "slides": [
