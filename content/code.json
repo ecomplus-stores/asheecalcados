@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": "header > div > div > div:nth-child(1){display:none;}\n",
   "html_head": "",
   "html_body": ""
 }
