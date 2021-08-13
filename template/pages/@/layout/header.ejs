@@ -125,7 +125,36 @@ if (header.categories_list) {
 
 <header class="header" id="header">
   <div class="header__container container-fluid">
-    <div class="header__row row">
+
+
+      <div style="text-align:center">
+        <a href="/">
+          <% if (logo && logo.url) {
+            const { width, height } = _.tryImageSize(logo.url)
+            %>
+            <img
+              id="logo"
+              class="header__logomeu"
+              src="<%= logo.url %>"
+              alt="<%= logo.alt %>"
+
+//comentario
+<% if (width) { %>
+                width="<%= width %>"
+                height="<%= height %>"
+              <% } %>
+			  
+>
+          <% } else { %>
+            <%= _.settings.name || _.store.name %>
+          <% } %>
+        </a>
+      </div>
+
+
+
+
+<div class="header__row row">
       <div class="col-auto p-0">
         <button
           class="btn header__toggler"
@@ -142,26 +171,6 @@ if (header.categories_list) {
         </button>
       </div>
 
-      <div class="col col-lg-auto pl-1 pl-md-2 pl-lg-3">
-        <a href="/">
-          <% if (logo && logo.url) {
-            const { width, height } = _.tryImageSize(logo.url)
-            %>
-            <img
-              id="logo"
-              class="header__logo"
-              src="<%= logo.url %>"
-              alt="<%= logo.alt %>"
-              <% if (width) { %>
-                width="<%= width %>"
-                height="<%= height %>"
-              <% } %>
-            >
-          <% } else { %>
-            <%= _.settings.name || _.store.name %>
-          <% } %>
-        </a>
-      </div>
 
       <div class="order-lg-last col-auto p-0">
         <div
