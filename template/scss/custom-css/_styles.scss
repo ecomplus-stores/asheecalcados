@@ -3,7 +3,24 @@
   height: auto
 }
 
-.header__navmeu{
+.padtop {
+    
+    padding-top: var(--spacer-2);
+    
 }
+
+.header {
+    
+    
+    border-bottom:0px;
+    
+}
+
+.fundopreto{
+    background: var(--primary);
+    color: white;
+/* background-color:black; */
+}
+
 
 
