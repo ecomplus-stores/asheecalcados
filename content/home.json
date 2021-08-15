@@ -14,7 +14,8 @@
           "link": "https://asheecalcados.netlify.app/calcados"
         },
         {
-          "img": "/img/uploads/promocoes.png"
+          "img": "/img/uploads/promocoes.png",
+          "link": "https://asheecalcados.netlify.app/promocoes"
         }
       ]
     }
