@@ -10,7 +10,8 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/calcados.png"
+          "img": "/img/uploads/calcados.png",
+          "link": "https://asheecalcados.netlify.app/calcados"
         },
         {
           "img": "/img/uploads/promocoes.png"
