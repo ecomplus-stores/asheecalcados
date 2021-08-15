@@ -18,6 +18,10 @@
           "link": "https://asheecalcados.netlify.app/promocoes"
         }
       ]
+    },
+    {
+      "type": "responsive-banner",
+      "img": "/img/uploads/novidades.jpg"
     }
   ]
 }
