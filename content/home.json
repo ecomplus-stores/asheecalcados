@@ -21,7 +21,8 @@
     },
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/novidades.jpg"
+      "img": "/img/uploads/novidades.jpg",
+      "link": "https://asheecalcados.netlify.app/novidades"
     }
   ]
 }
