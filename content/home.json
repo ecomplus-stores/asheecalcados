@@ -23,6 +23,14 @@
       "type": "responsive-banner",
       "img": "/img/uploads/novidades.jpg",
       "link": "https://asheecalcados.netlify.app/novidades"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "61193bb1cfbcd970597ed737:collections:EM DESTAQUE:/em-destaque",
+      "headless": false
     }
   ]
 }
