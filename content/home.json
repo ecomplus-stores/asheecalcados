@@ -3,8 +3,12 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "custom-content",
-      "markdown": "<div class=\"embed-responsive embed-responsive-16by9\"> <iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/5bkBPDC5LxE\"></iframe> </div>"
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/vox_shoes_anim.8.27.0.gif"
+        }
+      ]
     },
     {
       "type": "banners-grid",
