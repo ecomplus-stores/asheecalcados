@@ -12,10 +12,7 @@ const networksWithColors = [
 ]
 
 // start grouping categories by parent slug
-const allCategories = menu.alphabetical_order
-  ? _.lodash.sortBy(_.categories, ['name'])
-  : _.categories
-const categoryParents = _.lodash.groupBy(allCategories, ({ parent }) => {
+const categoryParents = _.lodash.groupBy(_.categories, ({ parent }) => {
   return !parent || !parent.slug ? '_' : parent.slug
 })
 const getSubmenuId = slug => `a-${slug.replace(/\//g, '_')}`

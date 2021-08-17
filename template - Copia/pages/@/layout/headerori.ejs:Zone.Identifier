@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://github.com/ecomplus-stores/mier/tree/master/template/pages/%40/layout
+HostUrl=https://github.com/ecomplus-stores/mier/blob/master/template/pages/%40/layout/header.ejs

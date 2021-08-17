@@ -1,26 +1,21 @@
 // Add your custom CSS here.
-.header__logomeu{width: 350px;
-  height: auto
+
+//cinza na tarja
+#main > div.top-bar > a
+{background:#747474}
+
+// ocultar ESSA PAGINA É UM PWA
+#main > div.top-bar > div > div
+{display:none}
+
+#header {
+border-bottom:0px;	// tira borda inferior
+opacity: 0.5;	// opacidade
 }
 
-.padtop {
-    
-    padding-top: var(--spacer-2);
-    
+// gif
+#content > div > div:nth-child(1)
+{margin-top:-6rem;
+margin-bottom: 7rem;
 }
-
-.header {
-    
-    
-    border-bottom:0px;
-    
-}
-
-.fundopreto{
-    background: var(--primary);
-    color: white;
-/* background-color:black; */
-}
-
-
 

@@ -1,0 +1,35 @@
+// Add your custom CSS here.
+
+//alinhar gif abaixo do menu
+#content > div > div:nth-child(1)
+{margin-top: -181px;
+margin-bottom: 13rem;
+}
+
+#header{opacity: 0.5;}
+
+.header__logomeu{width: 350px;
+  height: auto
+}
+
+.padtop {
+    
+    padding-top: var(--spacer-2);
+    
+}
+
+.header {
+    
+    
+    border-bottom:0px;
+    
+}
+
+.fundopreto{
+    background: var(--primary);
+    color: white;
+/* background-color:black; */
+}
+
+
+
