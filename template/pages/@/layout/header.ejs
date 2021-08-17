@@ -50,7 +50,7 @@
 	}
 %>
 
-<div class="row">
+<div class="row" style="display:none">
 	
 	<div class="col fundopreto" >
 		
@@ -104,7 +104,7 @@
 
 <div id="overlay" class="fade"></div>
 
-<div class="top-bar" style="display:none">
+<div class="top-bar">
 	<% if (header.marketing_stripe) { %>
     <% if (header.marketing_stripe.text) { %>
 	<% if (header.marketing_stripe.link) { %>
@@ -112,7 +112,7 @@
 	
 	<a
 	class="top-bar__countdown"
-	style="<%= marketingStripeStyle %>"
+	style="<%= marketingStripeStyle %>; background:#747474;"
 	href="<%= header.marketing_stripe.link %>"
 	>
 		
@@ -126,7 +126,8 @@
 	<% } %>
 	<% } %>
 	
-	<div class="top-bar__nav d-none d-md-block">
+	<!--<div class="top-bar__nav d-none d-md-block" style="display:none;">-->
+	<div  style="display:none;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
