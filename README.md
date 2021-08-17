@@ -12,7 +12,7 @@ stores
 :scroll: **[Get started](https://github.com/ecomplus/storefront-starter#getting-started)**
 / [Documentation](https://developers.e-com.plus/storefront/)
 
-## Project setup
+## Configuração do projeto
 
 ``````
 npm i
