@@ -3,14 +3,10 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "info-bar",
-      "enabled": false
-    },
-    {
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/logo-ashee-calcados-site.png"
+          "img": "/img/uploads/nike-shoe-gif-comp-1.gif"
         }
       ]
     },
