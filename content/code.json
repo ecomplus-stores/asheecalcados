@@ -1,5 +1,5 @@
 {
-  "css": "header > div > div > div:nth-child(1){display:none;}\nsection.info-bar{display:none;}\n\n\n",
+  "css": "section.info-bar{display:none;}\n\n\n",
   "html_head": "",
   "html_body": ""
 }
