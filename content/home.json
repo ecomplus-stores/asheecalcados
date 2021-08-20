@@ -14,10 +14,12 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/calcados.jpg"
+          "img": "/img/uploads/calcados.jpg",
+          "link": "https://asheecalcados.netlify.app/calcados"
         },
         {
-          "img": "/img/uploads/promocoes.jpg"
+          "img": "/img/uploads/promocoes.jpg",
+          "link": "https://asheecalcados.netlify.app/promocoes"
         }
       ]
     },
@@ -25,7 +27,8 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/novidades.jpg"
+          "img": "/img/uploads/novidades.jpg",
+          "link": "https://asheecalcados.netlify.app/novidades"
         }
       ]
     },
