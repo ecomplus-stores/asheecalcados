@@ -4,3 +4,20 @@
 #main > div.top-bar > a
 {background:#747474}
 
+// ocultar ESSA PAGINA É UM PWA
+#main > div.top-bar > div > div
+{display:none}
+
+#header {
+border-bottom:0px;	// tira borda inferior
+opacity: 0.5;	// opacidade
+}
+
+// gif
+#content > div > div:nth-child(1)
+{margin-top:-5.2rem;
+//margin-bottom: 7rem;
+}
+
+#main > div.top-bar
+{margin-bottom: -12px;}
