@@ -142,7 +142,21 @@ if (header.categories_list) {
         </button>
       </div>
 
+      <!-- REDES SOCIAIS - SISWEB -->
+      <% if (header.contacts_stripe.socials) { %>
+        <div class="col-auto d-none d-md-inline"  >
+          <% networks.forEach(network => { %>
+            <% if (contacts[network]) { %>
+              <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                <i class="fab fa-<%= network %>"></i>
+              </a>
+            <% } %>
+          <% }) %>
+        </div>
+      <% } %>
+      
       <div class="col col-lg-auto pl-1 pl-md-2 pl-lg-3">
+        
         <a href="/">
           <% if (logo && logo.url) {
             const { width, height } = _.tryImageSize(logo.url)
@@ -271,6 +285,7 @@ if (header.categories_list) {
         </div>
       <% } %>
 
+        
       <% if (categories && categories.length) { %>
         <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %>">
           <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
@@ -282,6 +297,9 @@ if (header.categories_list) {
           </nav>
         </div>
       <% } %>
+
+
+
     </div>
   </div>
 </header>
