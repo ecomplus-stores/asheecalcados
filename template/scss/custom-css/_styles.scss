@@ -12,9 +12,18 @@
     .not-header {
         display: none !important;
     }
+    #search-bar:not(.not-header) input {
+        background-color: transparent;
+        border: 1px solid #000;
+        border-radius: 50px;
+    }
+    .header__toggler {
+        display: none;
+    }
+    #logo-desk {
+        display: flex;
+        justify-content: center;
+    }
+
 }
-#search-bar:not(.not-header) input {
-    background-color: transparent;
-    border: 1px solid #000;
-    border-radius: 50px;
-}
+
