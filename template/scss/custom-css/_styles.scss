@@ -1,1 +1,20 @@
 // Add your custom CSS here.
+.top-bar__nav {
+    .header-sociais {
+        display: flex;
+        align-items: center;
+    }
+    .header-topo {
+        display: flex;
+    }
+}
+@media(min-width: 767px) {
+    .not-header {
+        display: none !important;
+    }
+}
+#search-bar:not(.not-header) input {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50px;
+}

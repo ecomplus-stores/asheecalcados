@@ -69,7 +69,18 @@ if (header.categories_list) {
   <div class="top-bar__nav d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
+        <% if (header.contacts_stripe.socials) { %>
+          <div class="col header-sociais">
+            <% networks.forEach(network => { %>
+              <% if (contacts[network]) { %>
+                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                  <i class="fab fa-<%= network %>"></i>
+                </a>
+              <% } %>
+            <% }) %>
+          </div>
+        <% } %>
+        <div class="col-auto header-topo">
           <nav class="top-bar__page-links">
             <% if (header.contacts_stripe.pages) { %>
               <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
@@ -101,18 +112,75 @@ if (header.categories_list) {
               </a>
             <% } %>
           <% } %>
-        </div>
-        <% if (header.contacts_stripe.socials) { %>
-          <div class="col-auto">
-            <% networks.forEach(network => { %>
-              <% if (contacts[network]) { %>
-                <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
-                  <i class="fab fa-<%= network %>"></i>
-                </a>
-              <% } %>
-            <% }) %>
+          <div
+            class="d-none d-lg-block  collapse show"
+            id="search-bar"
+          >
+            <form
+              class="header__search mt-2 mt-md-3 mt-lg-0"
+              id="search-form"
+              action="/search"
+              method="get"
+            >
+              <input
+                type="search"
+                name="term"
+                placeholder="O que deseja"
+                aria-label="<%= _.dictionary('searchProducts') %>"
+                class="header__search-input form-control"
+                id="search-input"
+              >
+              <button
+                type="submit"
+                class="header__search-btn"
+                aria-label="<%= _.dictionary('searchProducts') %>"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+              <div id="instant-search">
+                <!--
+                  `InstantSearch` should be open on input focus:
+                  https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+                -->
+              </div>
+            </form>
+
+            <% if (_.settings.domain) { %>
+              <script type="application/ld+json"><%-
+                JSON.stringify({
+                  '@context': 'http://schema.org',
+                  '@type': 'WebSite',
+                  url: `https://${_.settings.domain}/`,
+                  potentialAction: {
+                    '@type': 'SearchAction',
+                    target: `https://${_.settings.domain}/search?term={search_term_string}`,
+                    'query-input': 'required name=search_term_string'
+                  }
+                })
+              %></script>
+            <% } %>
+
           </div>
-        <% } %>
+          <a
+            id="user-button"
+            class="btn btn-lg"
+            role="button"
+            href="/app/#/account/"
+            title="<%= _.dictionary('myAccount') %>"
+          >
+            <i class="fas fa-user"></i>
+          </a>
+          <a
+            id="cart-button"
+            class="btn btn-lg"
+            role="button"
+            href="/app/#/cart"
+            title="<%= _.dictionary('openCart') %>"
+          >
+            <i class="fas fa-shopping-bag"></i>
+            <!--<span id="cart-count" class="badge badge-primary"></span>-->
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -139,7 +207,7 @@ if (header.categories_list) {
 
       <!-- REDES SOCIAIS - SISWEB -->
       <% if (header.contacts_stripe.socials) { %>
-        <div class="col-auto d-none d-md-inline"  >
+        <div class="col-auto d-none d-md-inline" style="visibility: hidden;">
           <% networks.forEach(network => { %>
             <% if (contacts[network]) { %>
               <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
@@ -159,7 +227,7 @@ if (header.categories_list) {
 
       <div class="order-lg-last col-auto p-0">
         <div
-          class="header__buttons"
+          class="header__buttons not-header"
           role="group"
           aria-label="<%= _.dictionary('myAccount') %>"
         >
@@ -220,7 +288,7 @@ if (header.categories_list) {
         %>
 
         <div
-          class="d-none d-lg-block  collapse show"
+          class="not-header d-none d-lg-block collapse show"
           id="search-bar"
         >
           <form
