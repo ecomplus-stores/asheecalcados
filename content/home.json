@@ -35,6 +35,15 @@
       ]
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/novidades.jpg",
+          "link": "https://asheecalcados.netlify.app/novidades"
+        }
+      ]
+    },
+    {
       "type": "info-bar",
       "enabled": false
     },
