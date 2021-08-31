@@ -22,6 +22,19 @@
       ]
     },
     {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/calcados.jpg",
+          "link": "https://asheecalcados.netlify.app/calcados"
+        },
+        {
+          "img": "/img/uploads/promocoes.jpg",
+          "link": "https://asheecalcados.netlify.app/promocoes"
+        }
+      ]
+    },
+    {
       "type": "info-bar",
       "enabled": false
     },
