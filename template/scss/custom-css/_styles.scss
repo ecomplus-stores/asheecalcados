@@ -14,16 +14,29 @@
     }
     #search-bar:not(.not-header) input {
         background-color: transparent;
-        border: 1px solid #000;
+        border: 2px solid #000;
         border-radius: 50px;
+        height: 35px;
+        margin-top: 8px;
     }
+
+    #search-form > button{font-size: 1rem;}
+
     .header__toggler {
         display: none;
     }
     #logo-desk {
         display: flex;
         justify-content: center;
+        margin-top: -60px;
     }
+
+    #logo {
+        max-width:400px;
+        max-height:400px;
+    }
+    
+    .header__nav {font-size:x-large ;}
 
 }
 
