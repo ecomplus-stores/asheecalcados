@@ -23,7 +23,11 @@
     "socials": true
   },
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/calcados?Calçados",
+      "/promocoes?Promoções",
+      "/novidades?Novidades"
+    ],
     "random": 6,
     "full_width": true
   },
