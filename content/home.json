@@ -38,7 +38,7 @@
       "type": "banners-grid",
       "banners": [
         {
-          "img": "/img/uploads/novidades.jpg",
+          "img": "/img/uploads/novidades.png",
           "link": "https://asheecalcados.netlify.app/novidades"
         }
       ]
