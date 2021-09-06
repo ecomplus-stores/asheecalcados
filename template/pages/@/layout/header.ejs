@@ -21,11 +21,6 @@ let marketingStripeStyle = ''
   }
 })
 
-// store logo object
-const logo = _.settings.logo
-  ? { url: _.settings.logo, alt: _.settings.name }
-  : _.store.logo
-
 // list featured categories
 let categories = []
 let isCategoriesNavFull
@@ -142,28 +137,84 @@ if (header.categories_list) {
         </button>
       </div>
 
-      <div class="col col-lg-auto pl-1 pl-md-2 pl-lg-3">
-        <a href="/">
-          <% if (logo && logo.url) {
-            const { width, height } = _.tryImageSize(logo.url)
-            %>
-            <img
-              id="logo"
-              class="header__logo"
-              src="<%= logo.url %>"
-              alt="<%= logo.alt %>"
-              <% if (width) { %>
-                width="<%= width %>"
-                height="<%= height %>"
-              <% } %>
-            >
-          <% } else { %>
-            <%= _.settings.name || _.store.name %>
-          <% } %>
+      <!-- REDES SOCIAIS - SISWEB -->
+      <% if (header.contacts_stripe.socials) { %>
+        <div class="col-auto d-none d-md-inline"  >
+          <% networks.forEach(network => { %>
+            <% if (contacts[network]) { %>
+              <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                <i class="fab fa-<%= network %>"></i>
+              </a>
+            <% } %>
+          <% }) %>
+        </div>
+      <% } %>
+      
+      <div class="col col-lg-6 pl-1 pl-md-2 pl-lg-3" >
+        
+        <a href="/" style="float: right;" >
+          <%- await include('@/layout/inc/logo', { _ }) %>
         </a>
       </div>
 
-      <div class="order-lg-last col-auto p-0">
+
+      <% if (header.search_input) {
+        const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
+        %>
+
+        <div
+          class="col d-none d-lg-block  collapse show"
+          id="search-bar"
+        >
+          <form
+            class="header__search mt-2 mt-md-3 mt-lg-0"
+            id="search-form"
+            action="/search"
+            method="get"
+          >
+            <input
+              type="search"
+              name="term"
+              placeholder="O que deseja?"
+              aria-label="<%= _.dictionary('searchProducts') %>"
+              class="header__search-input form-control"
+              id="search-input"
+            >
+            <button
+              type="submit"
+              class="header__search-btn"
+              aria-label="<%= _.dictionary('searchProducts') %>"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+            <div id="instant-search">
+              <!--
+                `InstantSearch` should be open on input focus:
+                https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
+              -->
+            </div>
+          </form>
+
+          <% if (_.settings.domain) { %>
+            <script type="application/ld+json"><%-
+              JSON.stringify({
+                '@context': 'http://schema.org',
+                '@type': 'WebSite',
+                url: `https://${_.settings.domain}/`,
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: `https://${_.settings.domain}/search?term={search_term_string}`,
+                  'query-input': 'required name=search_term_string'
+                }
+              })
+            %></script>
+          <% } %>
+
+        </div>
+
+      <% } %>
+
+      <div class="col-auto p-0">
         <div
           class="header__buttons"
           role="group"
@@ -216,61 +267,12 @@ if (header.categories_list) {
             https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/CartQuickview.html
           -->
         </div>
-      </div>
 
-      <% if (header.search_input) {
-        const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
-        %>
-        <div
-          class="d-none d-lg-block col-12 col-lg<%= searchColSize %> collapse show"
-          id="search-bar"
-        >
-          <form
-            class="header__search mt-2 mt-md-3 mt-lg-0"
-            id="search-form"
-            action="/search"
-            method="get"
-          >
-            <input
-              type="search"
-              name="term"
-              placeholder="<%= _.dictionary('searchProducts') %>"
-              aria-label="<%= _.dictionary('searchProducts') %>"
-              class="header__search-input form-control"
-              id="search-input"
-            >
-            <button
-              type="submit"
-              class="header__search-btn"
-              aria-label="<%= _.dictionary('searchProducts') %>"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-            <div id="instant-search">
-              <!--
-                `InstantSearch` should be open on input focus:
-                https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/InstantSearch.html
-              -->
-            </div>
-          </form>
 
-          <% if (_.settings.domain) { %>
-            <script type="application/ld+json"><%-
-              JSON.stringify({
-                '@context': 'http://schema.org',
-                '@type': 'WebSite',
-                url: `https://${_.settings.domain}/`,
-                potentialAction: {
-                  '@type': 'SearchAction',
-                  target: `https://${_.settings.domain}/search?term={search_term_string}`,
-                  'query-input': 'required name=search_term_string'
-                }
-              })
-            %></script>
-          <% } %>
-        </div>
-      <% } %>
 
+      </div>  <!--fim div last-->
+
+        
       <% if (categories && categories.length) { %>
         <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %>">
           <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
@@ -282,6 +284,9 @@ if (header.categories_list) {
           </nav>
         </div>
       <% } %>
+
+
+
     </div>
   </div>
 </header>
