@@ -49,8 +49,9 @@
       "collection_id": "61361c9a522ab535e605376d:categories:EM DESTAQUE:/em-destaque",
       "limit": 12,
       "page": 1,
-      "headless": true,
-      "link": "EM DESTAQUE"
+      "headless": false,
+      "link": "",
+      "title": ""
     },
     {
       "type": "page-title",
