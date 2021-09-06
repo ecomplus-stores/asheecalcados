@@ -1,7 +1,9 @@
 {
   "marketing_stripe": {
     "text": "10% DE DESCONTO NA SUA PRIMEIRA COMPRA!",
-    "link": "/promotion"
+    "link": "/promotion",
+    "background": "#b8b8b8",
+    "color": "#ffffff"
   },
   "contacts_stripe": {
     "pages": [
