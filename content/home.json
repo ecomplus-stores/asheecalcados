@@ -52,6 +52,14 @@
       "headless": false,
       "link": "",
       "title": ""
+    },
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/fique-por-dentro.jpg"
+        }
+      ]
     }
   ]
 }
