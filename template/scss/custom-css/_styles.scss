@@ -7,10 +7,13 @@
         text-transform: uppercase;
     }
 
-    .footer__credits, .letrabranca, .footer__contacts a, .footer__social i, .footer__title, .footer__contacts, .footer__links a {color: white;
+    .footer__credits, .letrabranca, .footer__contacts a, .footer__social i, 
+    .footer__title, .footer__contacts, .footer__links a {color: white;
         }
 
-    // .footer__contacts a{color: white;
+    .product-card {background-color: white;}
+
+        // .footer__contacts a{color: white;
     // }       
     
     #selos {background-color: white;}
@@ -46,6 +49,7 @@
     // .products-carousel__item glide__slide--active
 
     body {background-color: #f3f3f3;}
+    
     
     .box-prod {
         height: 200px;
