@@ -156,13 +156,13 @@ const contacts = _.cms('contacts') || {}
         </div>
       </div>
 
-      <div class="col-12 col-xl order-lg-last">
+      <div class="letrabranca col-12 col-xl order-lg-last">
         <h2 class="footer__title footer__store">
           <%= footer.description.title || _.settings.name %>
         </h2>
         <p><%- footer.description.text || _.settings.description %></p>
 
-        <div class="mt-4 mb-3">
+        <div id="selos" class="mt-4 mb-3">
           <p class="footer__payment-methods">
             <% Object.keys(footer.payment_methods).forEach(method => { %>
               <% if (footer.payment_methods[method]) { %>

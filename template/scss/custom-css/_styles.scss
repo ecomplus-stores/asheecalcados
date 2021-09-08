@@ -1,12 +1,19 @@
 // Add your custom CSS here.
 @media only screen and (min-width: 700px) {
 
-    
+    // .letrabranca{color: white;}
+
     #main > footer {background-color: black;
+        text-transform: uppercase;
     }
 
-    .footer__title {color: white;}
-    .footer__links a {color: white;}
+    .footer__credits, .letrabranca, .footer__contacts a, .footer__social i, .footer__title, .footer__contacts, .footer__links a {color: white;
+        }
+
+    // .footer__contacts a{color: white;
+    // }       
+    
+    #selos {background-color: white;}
 
     .header__buttons {margin-left: auto;}
 
