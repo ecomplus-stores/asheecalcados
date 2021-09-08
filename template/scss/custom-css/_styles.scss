@@ -1,6 +1,13 @@
 // Add your custom CSS here.
 @media only screen and (min-width: 700px) {
 
+    
+    #main > footer {background-color: black;
+    }
+
+    .footer__title {color: white;}
+    .footer__links a {color: white;}
+
     .header__buttons {margin-left: auto;}
 
     #search-input {border-radius: 25px;

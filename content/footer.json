@@ -5,16 +5,16 @@
   },
   "links_1": {
     "list_pages": true,
-    "title": "Páginas",
+    "title": "COMO COMPRAR",
     "list": []
   },
   "links_2": {
     "list_categories": true,
-    "title": "Categorias",
+    "title": "PRODUTOS",
     "list": []
   },
   "contacts": {
-    "title": "Contatos",
+    "title": "FALE COM A ASHEE",
     "phone_wpp": true,
     "socials": true,
     "email": true,
