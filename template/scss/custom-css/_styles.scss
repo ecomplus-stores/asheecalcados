@@ -13,11 +13,6 @@
     .footer__title, .footer__contacts, .footer__links a {color: white;
         }
 
-    // .product-card {background-color: white;}
-
-        // .footer__contacts a{color: white;
-    // }       
-    
     #selos {background-color: white;}
 
     .header__buttons {margin-left: auto;}
@@ -29,32 +24,17 @@
 
     .header__nav{font-size: large;}
 
-    // #header {opacity: .5;}
-
     .banner-slider{margin:-116px auto;
     margin-bottom: auto;
 }
 
-    .products-carousel__title a{background-color: #f3f3f3;}
-        // background-color: #f3f3f3;
-    // }
+    .products-carousel, .product-card__name, .products-carousel__title a{background-color: #f3f3f3;}
 
-    // .glide__slide products-carousel__item glide__slide--active
-    .products-carousel{background-color: #f3f3f3;}
-    
     .product-card__pictures{background-color: white;
         border-radius: 25px;
         margin-bottom: 10px;
 
     }
-
-    // .glide__slide {background-color: white;
-    //     border-radius: 25px;
-    // }
-
-    // height: 100px;}
-    
-    // .products-carousel__item glide__slide--active
 
     body {background-color: #f3f3f3;}
     
@@ -65,10 +45,4 @@
         width: 30%;
         box-sizing: border-box;
       }
-    //altura do card dos produtos
-;    // block-size: initial;
-    // #content > div > div.collection-shelf.my-lg-5 > section > div > div > ul > li:nth-child(2)
-    // li.products-carousel__item{height: 250px;} 
-
-
 }
