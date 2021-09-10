@@ -1,19 +1,41 @@
 // Add your custom CSS here.
+
+body {background-color: #f3f3f3;}
+.products-carousel, .product-card__name, .products-carousel__title a{background-color: #f3f3f3;}
+.glide__track{text-transform: uppercase;}
+
+.product-card__pictures{background-color: white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+
+}
+
+#main > footer {background-color: black;
+    text-transform: uppercase;
+}
+
+.footer__credits, .letrabranca, .footer__contacts a, .footer__social i, 
+.footer__title, .footer__contacts, .footer__links a {color: white; }
+
+#selos {background-color: white;}
+
+@media only screen and (max-width: 768px) {
+    .banner-slider{margin:-57px auto;
+        margin-bottom: auto;
+    
+    }
+
+    #main > footer {text-align: center;}
+
+
+}
+
 @media only screen and (min-width: 700px) {
 
     // .letrabranca{color: white;}
 
-    #main > footer {background-color: black;
-        text-transform: uppercase;
-    }
 
-    .glide__track{text-transform: uppercase;}
-
-    .footer__credits, .letrabranca, .footer__contacts a, .footer__social i, 
-    .footer__title, .footer__contacts, .footer__links a {color: white;
-        }
-
-    #selos {background-color: white;}
+    
 
     .header__buttons {margin-left: auto;}
 
@@ -28,17 +50,6 @@
     margin-bottom: auto;
 }
 
-    .products-carousel, .product-card__name, .products-carousel__title a{background-color: #f3f3f3;}
-
-    .product-card__pictures{background-color: white;
-        border-radius: 25px;
-        margin-bottom: 10px;
-
-    }
-
-    body {background-color: #f3f3f3;}
-    
-    
     .box-prod {
         height: 200px;
         display: inline-block;

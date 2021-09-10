@@ -2,23 +2,30 @@
 
 $(window).ready(function () {
 
-    if (window.matchMedia('screen and (min-width: 700px)').matches) {
+    // if (window.matchMedia('screen and (min-width: 700px)').matches) {
+
+    //     if (window.location.pathname === "/") {
+    //         $('#header').css('opacity', '0.5');
+    //     }
+    // }
+
+    // if (window.matchMedia('screen and (max-width: 700px)').matches) {
 
         if (window.location.pathname === "/") {
             $('#header').css('opacity', '0.5');
         }
-    }
+    // }
 
 });
 
 
 $(window).scroll(function () {
 
-    if (window.matchMedia('screen and (min-width: 700px)').matches) {
+    // if (window.matchMedia('screen and (min-width: 700px)').matches) {
         if (window.location.pathname === "/") {
             $('#header').css('opacity', '0.5');
         }
-    }
+    // }
 
     if ($(window).scrollTop() > 0) {
         $('#header').css('opacity', '1.0');
