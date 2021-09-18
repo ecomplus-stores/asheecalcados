@@ -11,7 +11,7 @@
         "title": "10% DE DESCONTO NA SUA PRIMEIRA COMPRA!"
       }
     ],
-    "phone_wpp": true,
+    "phone_wpp": false,
     "socials": true
   },
   "categories_list": {
