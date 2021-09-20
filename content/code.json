@@ -1,5 +1,5 @@
 {
-  "css": "#main > div.top-bar > div > div > div > div {\ndisplay:none;\n}\n#main > div.top-bar > div {\ndisplay:none;\n}\n",
+  "css": "#main > div.top-bar > div > div > div > div {\ndisplay:none;\n}\n#main > div.top-bar > div {\ndisplay:none;\n}\n\n#header > div > div > div:nth-child(1) > button > i\n{\ndisplay:none;\n}\n",
   "html_head": "",
   "html_body": ""
 }
