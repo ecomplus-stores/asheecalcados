@@ -1,5 +1,5 @@
 {
-  "css": "#main > div.top-bar > div > div > div > div {\ndisplay:none;\n}\n#main > div.top-bar > div {\ndisplay:none;\n}\n\n#header > div > div > div:nth-child(1) > button > i\n{\ndisplay:none;\n}\n\n#content > div > div.collection-shelf.my-lg-5 > section > h1 > div > div > ul > li:nth-child(2) > article > div > section > div.product-card__buy.fade > button\n{\n background:url(\"template/public/img/uploads/fundo-botao-ashee-calcados.png\");\n}",
+  "css": "#main > div.top-bar > div > div > div > div {\ndisplay:none;\n}\n#main > div.top-bar > div {\ndisplay:none;\n}\n\n\n#content > div > div.collection-shelf.my-lg-5 > section > h1 > div > div > ul > li:nth-child(2) > article > div > section > div.product-card__buy.fade > button\n{\n background:url(\"template/public/img/uploads/fundo-botao-ashee-calcados.png\");\n}",
   "html_head": "",
   "html_body": ""
 }
