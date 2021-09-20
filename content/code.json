@@ -1,5 +1,5 @@
 {
-  "css": "",
+  "css": "#main > div.top-bar > div > div > div > div {\ndisplay:none;\n}",
   "html_head": "",
   "html_body": ""
 }
