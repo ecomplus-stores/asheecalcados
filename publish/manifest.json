@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.b0ccdb85a35303c836f93ddaef20813c.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.5735b08242953f856f9b878abd06ca99.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.ef5424b10ebaf6190fe291905bc62a1a.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.40b9c67a08efee4e9b6f990b78f16f88.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.5096a2b31b9dc7bfc224a785430e46cf.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Ashee Calçados",
+  "short_name": "Ashee",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Ashee Calçados",
+  "background_color": "#ffffff",
+  "theme_color": "#222831"
+}
